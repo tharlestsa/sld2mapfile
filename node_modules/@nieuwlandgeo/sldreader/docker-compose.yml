@@ -1,0 +1,14 @@
+version: '3'
+volumes:
+  gemcache:
+services:
+  jekyll:
+    image: jekyll/jekyll
+    environment:
+      - JEKYLL_ENV=docker
+    volumes:
+      - './docs:/srv/jekyll'
+      - 'gemcache:/usr/local/bundle'
+    ports:
+      - '4000:4000'
+    command: jekyll serve --force_polling --config _config.yml,_config.docker.yml

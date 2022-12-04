@@ -1,0 +1,8 @@
+title: "SLDReader"
+remote_theme: pmarsceill/just-the-docs
+search_enabled: false
+sass:
+  style: compressed
+aux_links:
+  "SLDReader on GitHub":
+    - "//github.com/nieuwlandgeo/sldreader"
