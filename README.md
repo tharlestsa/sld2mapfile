@@ -11,7 +11,7 @@ You need to navigate to the folder where the .sld is and run this command.
 
 ### One single file
 ```
-#  sld2map --table <tablename> --sld <sld_path> > pa_br_agropecuaria_organica.map
+#  sld2map --table <tablename> --sld <sld_path> > <mapfile_name>.map
 ```
 
 ### Multiple files
