@@ -1,0 +1,29 @@
+{
+  "name": "sld2mapfile",
+  "version": "1.0.0",
+  "description": "The converter SLD file to Mapfile",
+  "bin": {
+    "sld2map": "./bin/index.js"
+  },
+  "scripts": {
+    "compile": "npx tsc bin/index.ts",
+    "run": "npx ts-node bin/index.ts",
+    "test": "npx tsc bin/index.ts && node bin/index.js --sld test.sld --table test",
+    "deploy": "npx tsc bin/index.ts && npm link"
+  },
+  "author": "Tharles de Sousa Andrade",
+  "license": "MIT",
+  "dependencies": {
+    "@nieuwlandgeo/sldreader": "^0.2.16",
+    "geostyler-mapfile-parser": "^2.0.0",
+    "geostyler-sld-parser": "^5.0.0",
+    "geostyler-style": "^7.2.0",
+    "ol": "^7.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.13"
+  }
+}
